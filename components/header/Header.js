@@ -1,12 +1,20 @@
+import { 
+    HomeIcon,
+    BadgeCheckIcon,
+    CollectionIcon,
+    LibraryIcon,
+    SearchIcon,
+    User
+} from '@heroicons/react/outline';
 import Image from 'next/image';
 import { HeaderIcons } from './HeaderIcons';
 
 export const Header = () => {
     return (
         <header>
-            <div>
-                <HeaderIcons/>
-            </div>
+            <ul>
+                <HeaderIcons title="HOME" Icon={HomeIcon}/>
+            </ul>
             <Image
                 className="object-contain"
                 src='https://links.papareact.com/ua6'

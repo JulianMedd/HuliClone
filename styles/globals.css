@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body {
-    @apply bg-back;
-    @apply text-gray-300;
+@layer base {
+    body {
+        @apply bg-back;
+        @apply text-gray-300;
+    }
 }
