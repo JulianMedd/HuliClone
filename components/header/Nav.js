@@ -4,8 +4,8 @@ import { useRouter } from 'next/router';
 export const Nav = () => {
     const router = useRouter();
     return (
-        <nav>
-            <ul className='flex px-10 sm:px-20 text-2xl whitespace-nowrap  space-x-10 sm:space-x-20 overflow-x-scroll scrollbar-hide'>
+        <nav className="relative">
+            <ul className='flex px-10 sm:px-20 text-2xl whitespace-nowrap  space-x-10 sm:space-x-20 overflow-x-auto scrollbar-hide'>
                 {
                     Object.entries(Request).map(([key, {title, url}])=>{
                         return (
@@ -20,6 +20,7 @@ export const Nav = () => {
                     })
                 }
             </ul>
+            <div className="absolute top-0 right-0 z-10 h-10 w-1/12 bg-gradient-to-l from-back"></div>
         </nav>
     )
 }
