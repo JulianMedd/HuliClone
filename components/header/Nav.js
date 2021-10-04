@@ -12,7 +12,7 @@ export const Nav = () => {
                             <li
                                 key={key}
                                 className='hover:text-white cursor-pointer active:text-red-500'
-                                onClick={()=>router.push(`/genre=${key}`)}
+                                onClick={()=>router.push(`/?genre=${key}`)}
                             >
                                 {title}
                             </li>

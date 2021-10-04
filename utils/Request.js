@@ -21,7 +21,7 @@ export default {
         title: 'Horror',
         url: `/discover/movie?api_key=${API_KEY}&with_genres=27`,
     },
-    fetchRomanceMoives: {
+    fetchRomanceMovies: {
         title: 'Romance',
         url: `/discover/movie?api_key=${API_KEY}&with_genres=10749`,
     },
